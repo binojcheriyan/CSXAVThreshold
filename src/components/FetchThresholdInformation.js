@@ -10,7 +10,7 @@ state={
 }
 
     async componentDidMount(){
-        const url="http://guaemeaham1.mx.hpicorp.net/CSX_WebAPI/api/CSXAvailableThreshold";
+        const url="http://guaemeaham1.mx.hpicorp.net/CSXAPI/api/CSXAvailableThreshold";
         const response= await fetch(url);
         const data=await response.json();
         this.setState({result: data, loading: false})
